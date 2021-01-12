@@ -70,6 +70,25 @@ void generate_matrix(Graph* graph)
         }
     }
 }
+int izo_matrix(Graph* graph) {
+    bool k = false;
+    int* matri = (int*)malloc(graph->size * sizeof(int));
+    for (int i = 0; i < graph->size; i++) {
+        matri[i] = 0;
+
+    }
+    for (int i = 0; i < graph->size; i++) {
+        for (int j = 0; j < graph->size; j++) {
+            matri[i] = matri[i] + graph->matrix[i][j];
+        }
+    }
+    for (int i = 0; i < graph->size; i++) {
+        if (matri[i] == 0) {
+            k = true;
+        }
+    }
+    return k;
+}
 
 int** matrix(int V )
 {   

@@ -19,15 +19,15 @@ typedef struct Graph {
     int     size;
    
 }Graph;
-
+int izo_matrix(Graph* graph);
 int** matrix(int size);
 void generate_matrix(Graph* graph);
-
 Graph* init_graph(int size);
 void free_graph(Graph* graph);
+
 void print_graph(Graph* graph, FILE* stream);
+
 void prim_auto(Graph* graph, FILE* stream);
 
 Graph* init_manually();
-
 Graph* read_graph(const char* fname);

@@ -1,2 +1,4 @@
 ﻿  courses.cpp
+C:\Users\tront\source\repos\courses\courses\courses.cpp(3,26): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\tront\source\repos\courses\courses\courses.cpp(13,26): warning C4018: <: несоответствие типов со знаком и без знака
   courses.vcxproj -> C:\Users\tront\source\repos\courses\Debug\courses.exe
